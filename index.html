@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav id="nav" class="d-none nav nav-pills nav-justified group">
+      <a class="nav-link disabled d-flex justify-content-between"
+        ><h1>SMART LOGIN</h1></a
+      >
+      <button
+        onclick="signUup() , remove()"
+        class="btn btn-outline-warning fs- my-3"
+      >
+        Logout
+      </button>
+    </nav>
+    <div
+      id="massage"
+      class="d-none py-5 my-5 text-center h-100 d-flex align-items-center"
+    >
+      <div class="group m-auto w-75 p-5">
+        <h2 id="username" class="fw-semibold"></h2>
+      </div>
+    </div>
+    <span class="d-none"></span>
+    <div id="bigbox" class="p-5 my-5 text-center">
+      <div class="group m-auto w-75 p-5">
+        <h1>Smart Login System</h1>
+        <input
+          id="signupName"
+          class="d-none form-control fs-6 my-3"
+          placeholder="Enter your name"
+          type="text"
+        />
+        <input
+          id="signinEmail"
+          class="form-control fs-6 my-3"
+          placeholder="Enter your email"
+          type="text"
+        />
+        <input
+          id="signinPassword"
+          class="form-control fs-6 my-3"
+          placeholder="Enter your password"
+          type="password"
+        />
+        <p id="incorrect"></p>
+        <p id="exist"><span></span></p>
+        <button
+          onclick="login()"
+          id="butLogin"
+          class="btn btn-outline-primary fs-6 w-100 my-3"
+        >
+          Login
+        </button>
+        <button
+          onclick="signUp()"
+          id="butsignup"
+          class="d-none btn btn-outline-primary fs-6 w-100 my-3"
+        >
+          sign up
+        </button>
+        <p id="hover" class="text-black">
+          <span id="p2" class="d-none">You have an account </span>
+          <span id="spanOne">Don't have an account</span> ?
+          <a onclick="signIn()" class="text-warning up transition">Sign Up</a>
+          <a onclick="signUup()" class="text-warning d-none in transition"
+            >Signin</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

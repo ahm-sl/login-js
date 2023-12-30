@@ -1,0 +1,56 @@
+body {
+  background: #a61f69;
+  font-family: "Titillium Web", sans-serif;
+}
+
+#home {
+  height: 75vh;
+}
+
+h1 {
+  color: #f5cca0;
+}
+h2 {
+  color: #f5cca0;
+}
+
+.group {
+  box-shadow: -5px 2px 50px 4px rgba(242, 205, 92, 0.858);
+}
+
+input,
+textarea {
+  background-color: #400e32 !important;
+  color: #f8f8f8 !important;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(242, 242, 242) !important;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: transparent !important;
+
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover a {
+  text-decoration: double;
+}
+p {
+  color: #1e2720;
+}
+.design {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav {
+  background-color: #400e32;
+}
